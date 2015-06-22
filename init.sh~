@@ -1,10 +1,2 @@
-# Please change the environment variable $MALIA_HOME to wherever
-# intend to install Malia.
-
-# Note: this file executes each and every time you start Malia,
+# This file executes each and every time you start Malia,
 # so if you would like to add things to it, feel free.
-
-# You could also set this variable permanently by editing
-# /etc/environment.
-
-export $MALIA_HOME="~/Scripts/malia/"
