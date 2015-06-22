@@ -1,0 +1,3 @@
+Welcome to the Malia docs!
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. In English, this means that you are allowed to make copies of this software, give them to your friends and your enemies, and modify this software. You are not allowed to sell this software, and you have to give me credit if you use my code. For more information on this license, go to creativecommons.org (or just Google it).
