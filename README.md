@@ -9,4 +9,6 @@ Malia - Command line enhanced shell and content management system.
     4. Paste this onto a new line in that file: MALIA_HOME="installation location". Example: MALIA_HOME="usr/bin/malia/".
     5. Close the file and restart your computer.
     6. Run the command chmod a+x setup.sh.
+    7. Run setup.sh.
+    8. Follow the prompts. (If you're insecure with something, don't take my word for it. Read setup.sh yourself.
     7. Enjoy!
