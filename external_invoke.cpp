@@ -6,6 +6,5 @@ using namespace std;
  
 int main()
 {
-	system("$PWD/init.sh");
-	system("$PWD/backup.sh");
+	system("$MALIA_HOME/init.sh");
 }
