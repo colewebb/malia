@@ -10,5 +10,5 @@ Malia - Command line enhanced shell and content management system.
     5. Close the file and restart your computer.
     6. Run the command chmod a+x setup.sh.
     7. Run setup.sh.
-    8. Follow the prompts. (If you're insecure with something, don't take my word for it. Read setup.sh yourself.
+    8. Follow the prompts. (If you're insecure with something, don't take my word for it. Read setup.sh yourself._
     7. Enjoy!
