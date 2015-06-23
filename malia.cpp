@@ -17,41 +17,59 @@ You should have received a copy of the GNU General Public License along with thi
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <fstream>
  
 using namespace std;
 
 int running(string input) {
+	ofstream db ("db.txt");
 	if (input == "cole") {
 		cout << "Thank you for mentioning the name of this program's creator.\n";
 	}
-	else if (input == "visual_basic") {
+	else if (input == "visual-basic") {
 		system("~/Scripts/ms-code/code");
+	}
+/*	else if (input == "help") {
+		string line;
+		ifstream help_file ("help.txt");
+		getline  (help_file, line);
+		cout << help_file;
+	}
+*/
+	else {
+/*		const char* system_input;
+		input = const char* input;
+		system_input = input;
+		system(system_input); 
+*/
+		cout << "I don't know what you mean by that.\n";
 	}
 	return 0;
 }
 int loop_exit(bool exit_test) {
 	exit_test = false;
 	return exit_test;
+	int exit_status = 0;
+	return exit_status;
 	return 0;
 }
 int main()
 {
-	bool exit_test;
-	exit_test = true;
+	bool exit_test = true;
 	system("$MALIA_HOME/init.sh");
-	string welcome;
-	welcome = "user@malia >> ";
+	string welcome = "user@malia >> ";
+	ofstream db ("db.txt");
 	while (true) {
 		string input;
 		cout << welcome;
 		cin >> input;
 		if (input == "exit") {
 			loop_exit(exit_test);
-			return exit_test;
+			return 0;
 		}
 		else if (input == "bye") {
 			loop_exit(exit_test);
-			return exit_test;
+			return 0;
 		}
 		else {
 			running(input);
