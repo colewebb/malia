@@ -2,7 +2,7 @@ cd $MALIA_HOME
 echo Satisfying dependency on g++ to compile source code.
 sudo apt-get install g++
 echo Compiling source code..
-g++ ./malia.cpp
+g++ -o malia ./malia.cpp
 # chmod a+x
 echo Making files executable...
 chmod a+x backup.sh
