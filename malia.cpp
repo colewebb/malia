@@ -22,27 +22,19 @@ You should have received a copy of the GNU General Public License along with thi
 using namespace std;
 
 int running(string input) {
-	ofstream db ("db.txt");
-	if (input == "cole") {
-		cout << "Thank you for mentioning the name of this program's creator.\n";
+	ifstream db_read;
+	bool cmd_found = false;
+	string db = "$MALIA_HOME/db.txt";
+	db_read.open(db.c_str());
+	/* Somewhere in here, searching for the command needs to happen.
+	 * If the command is found, then set cmd_found to true and execute the command.
+	 * If the command isn't found, then leave cmd_found equal to false and send the
+	 * input to the system to execute. */
+	if (cmd_found == true) {
+		cout << "File found\n";
 	}
-	else if (input == "visual-basic") {
-		system("~/Scripts/ms-code/code");
-	}
-/*	else if (input == "help") {
-		string line;
-		ifstream help_file ("help.txt");
-		getline  (help_file, line);
-		cout << help_file;
-	}
-*/
 	else {
-/*		const char* system_input;
-		input = const char* input;
-		system_input = input;
-		system(system_input); 
-*/
-		cout << "I don't know what you mean by that.\n";
+		system(input.c_str());
 	}
 	return 0;
 }
